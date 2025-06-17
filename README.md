@@ -49,7 +49,7 @@ This project transforms hyperlocal newspaper content into structured, actionable
 - **Python 3.8+**  
 - **LangChain** – RAG pipeline and document processing  
 - **Google Gemini 1.5 Flash** – Language model and embeddings  
-- **ChromaDB** – Vector database for embeddings storage  
+- **ChromaDB** – Vector database for embeddings storage
 - **BeautifulSoup4** – Web scraping and HTML parsing  
 - **Requests** – HTTP client for web scraping  
 
@@ -57,13 +57,8 @@ This project transforms hyperlocal newspaper content into structured, actionable
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/hyperlocal-news-summarizer.git
-   cd hyperlocal-news-summarizer
-   ```
-
-2. **Install dependencies**  
-   ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/FrustratedPixel/Hyperlocale_News_AI.git
+   cd Hyperlocale_News_AI
    ```
 
 3. **Set up environment variables**  
@@ -88,49 +83,6 @@ The system is configured for Google Gemini free tier limits:
 - Classified Marketplace  
 - Obituaries & Personal Notices  
 - General Weekly Summary  
-
-## Usage
-
-### 1. Data Collection
-
-Run the web scraper for target newspapers:
-```bash
-python src/scraper.py --target adyar_times --output data/adyar/
-```
-
-### 2. Document Processing
-
-Process documents and create embeddings:
-```bash
-python src/document_processor.py --input-dirs data/ --localities adyar,besant_nagar
-```
-
-### 3. Generate Summaries
-
-Generate category-specific summaries:
-```bash
-python src/generate_summaries.py --localities all --output summaries.json
-```
-
-## Project Structure
-
-```
-hyperlocal-news-summarizer/
-├── src/
-│   ├── scraper.py            # Web scraping functionality
-│   ├── document_processor.py # Text preprocessing and chunking
-│   ├── embeddings.py         # Vector embeddings creation
-│   ├── rag_pipeline.py       # RAG chain implementation
-│   ├── summarizer.py         # Summary generation
-│   └── utils/
-│       ├── rate_limiter.py   # API rate limiting
-│       └── text_cleaner.py   # Text preprocessing utilities
-├── data/                     # Raw and processed documents
-├── config/
-│   └── prompts.py            # Category-specific prompts
-├── requirements.txt
-└── README.md
-```
 
 ## Sample Output
 
