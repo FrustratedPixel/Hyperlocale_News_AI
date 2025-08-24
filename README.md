@@ -27,6 +27,9 @@ An end-to-end Retrieval-Augmented Generation (RAG) pipeline that automatically i
 
 This project transforms hyperlocal newspaper content into structured, actionable summaries by combining web scraping, advanced text processing, and AI-powered summarization. The system maintains strict locality separation while providing category-specific insights across community initiatives, infrastructure updates, cultural events, and more.
 
+[news_AI.webm](https://github.com/user-attachments/assets/aaef730a-9b1a-4443-b24a-12e864574ae0)
+
+
 ## Features
 
 - **Automated Web Scraping**  
